@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow</title>
+
+    <style>
+        div{
+            margin-left: 20px;
+            background-color: white;
+            width: 200px;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .reduzido{
+            white-space: nowrap; /*O ITEM QUE TEM QUEBRA DE LINHA VAI FICA TUDO EM UMA LINHA SÓ*/
+
+            overflow: hidden; /*TIRA TUDO QUE ESTA FORA DA DIV*/
+
+            text-overflow: ellipsis; /*QUANDO CHEGAR NO LIMITE DA DIV VAI CRIAR UMA RETICÊNCIAS (...) MOSTRANDO PARA O USUARIO QUE TEM UMA CONTINUAÇÃO*/
+        }
+
+        .caixa:hover .reduzido{ 
+            white-space: normal; /*QUANDO PASSAR O MOUSE NA DIV O TEXTO VAI FICAR NORMAL*/
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de Text Overflow e White-Space</h1>
+
+    <div class="caixa">
+        <h2 class="reduzido" style="padding: 10px 10px 0px 10px; margin-bottom: 15px;">Isso é um exemplo de título muito longo e como podemos reduzir isso para ficar dentro de uma div</h2>
+
+        <p class="reduzido" style="padding: 0px 10px 10px 10px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ratione repellat magni reprehenderit! Minima earum, corporis ullam molestiae alias explicabo, nulla vel temporibus at illum non voluptatibus, ipsa dignissimos architecto!</p>
+    </div>
+    <p style="margin-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quasi enim quod sapiente fuga ab, unde saepe, porro perferendis eaque optio! Officia accusamus voluptatum rem totam dolorum alias animi id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quasi enim quod sapiente fuga ab, unde saepe, porro perferendis eaque optio! Officia accusamus voluptatum rem totam dolorum alias animi id?</p>
+
+</body>
+</html>

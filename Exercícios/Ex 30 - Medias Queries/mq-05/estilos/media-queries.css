@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+/*TYPICAL DEVICE BREAKPOINTS:
+
+    - PEQUENAS TELAS: ATÉ 600PX -> style.css
+    - CELULAR: 600PX ATÉ 768PX -> style.css
+    - TABLET: 768PX ATÉ 992PX
+    - DESKTOP: 992PX ATÉ 1200PX 
+    - GRANDES TELAS: A CIMA DE 1200PX  
+*/
+
+
+/*CONFIGURAÇÕES PARA TELAS E COM LARGURA MÍNIMA DE 768PX */
+@media screen and (min-width: 768px) {
+    i#burguer{
+        display: none;
+    }
+
+    #itens{
+        display: block;
+    }
+
+    #itens > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 750px;
+    }
+}

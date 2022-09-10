@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Métodos GET e POST</h1>
+    <h2>Teste de formulário</h2>
+    <br>
+
+    <!-- QUANDO USAR:
+        - POST: 
+            - QUANDO OS DADOS FOREM SENSÍVEIS. EX: SENHA, NÚMERO DO CARTÃO DE CRÉDITO, ENDEREÇO, CEP. 
+            - UTILIZA O HTTP PARA ENVIAR OS DADOS DOS FORMULÁRIOS.,
+            - ENVIA DADOS COM MAIS DE 3.000 BYTES (APROXIMADAMENTE 3.000 LETRAS) 
+            - ENVIO DE ARQUIVOS (IMAGENS, ARQUIVOS, VIDEOS, ETC)
+
+        - GET: 
+            - JÁ VEM COMO PADRÃO.
+            - QUANDO OS DADOS #NÃO# FOREM SENSÍVEIS. EX: PESQUISA, NOME, PESO, ALTURA.
+            - UTILIZA A URL PARA ENVIAR OS DADOS DOS FORMULÁRIOS.
+            - UTILIZAVEL QUANDO A URL PODE SER COMPARTILHADA (GOOGLE).
+            - ENVIA DADOS ATÁ 3.000 BYTES (APROXIMADAMENTE 3.000 LETRAS) 
+    -->
+
+
+    <form action="php/cadastro.php" method="post" autocomplete="on"><!-- METHOD -> INDICA QUAL MÉTODO VOCÊ QUER USAR PARA ENVIAR DADOS DOS FORMULÁRIOS --> 
+        <p>
+            <label for="iusuario">Usuario:</label>
+        <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="15" placeholder="Nome do usuário" autocomplete="username"> 
+            <!-- - REQUIRED -> OBRIGATÓRIO (O FORMULÁRIO NÃO É ENVIADO SE O CAMPO NAO FOR PREENCHIDO); 
+                - MAXLENGTH / MINLENGT COMPRIMENTO MÍNIMO E COMPRIMENTO MÁXIMO (CARACTERES); 
+                - PLACEHOLDER="texto" -> INDICA O TEXTO QUE VAI FICAR DENTRO DO CONTROLE INTARATIVO; 
+                - AUTOCOMPLETE='USERNAME' -> OFERECE UM PREENCHIMENTO AUTOMÁTICO COM O NOME DO USUÁRIO
+            -->
+        </p>
+
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength=8 maxlength="20" size=15" placeholder="Mínimo 8 caracteres" autocomplete="current-password"> 
+            <!-- - INPUT TYPE'PASSWORD'-> CRIA CONTROLES INTERATIVOS QUE RECEBEM SENHAS  
+                 - AUTOCOMPLETE='CURRENT-PASSWORD' -> OFERECE UM PREENCHIMENTO AUTOMÁTICO COM A SENHA ATUAL DO USUARIO-->
+        </p>
+
+        <input type="submit" value="Cadastrar">
+
+        <input type="reset" value="Limpar"> <!-- INPUT TYPE='RESET'-> CRIA CONTROLES INTERATIVOS (BOTÕES) QUE REDEFINE TODOS OS VALORES DO FORMULÁRIO  -->
+    </form>    
+</body>
+</html>

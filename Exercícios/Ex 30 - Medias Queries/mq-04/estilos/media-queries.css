@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+/*TODAS AS OUTRAS VERSÕES*/
+
+/*TYPICAL DEVICE BREAKPOINTS:
+    - PEQUENAS TELAS: ATÉ 600PX -> mobile-first.css
+    - CELULAR: 600PX ATÉ 768PX -> mobile-first.css
+    - TABLET: 768PX ATÉ 992PX
+    - DESKTOP: 992PX ATÉ 1200PX 
+    - GRANDES TELAS: A CIMA DE 1200PX  
+*/
+
+
+/*CONFIGURAÇÕES PARA (media) IMPRIMIR (print)*/
+@media print{ /*IMPRESSÃO*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    
+    main{
+        width: 90vw;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita atravéz do site www.github.com/itieldario';
+        font-size: 15px;
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+
+/*CONFIGURAÇÕES PARA (media) TELAS (screen) E (and) COM LARGURA MÍNIMA (min-width) DE 768PX E (and) COM LARGURA MÁXIMA (max-width) DE 992PX*/
+@media screen and (min-width: 768px) and (max-width: 992px){ /*TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+
+/*CONFIGURAÇÕES PARA (media) TELAS (screen) E (and) COM LARGURA MÍNIMA (min-width) DE 992PX E (and) COM LARGURA MÁXIMA (max-width) DE 1200PX*/
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }    
+}
+
+
+/*CONFIGURAÇÕES PARA (media) TELAS (screen) E (and) COM LARGURA MÍNIMA (min-width) DE 1200PX*/
+@media screen and (min-width: 1200px){ /*TELAS GRANDES*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        background-color: rgba(114, 114, 114, 0.719);
+        width: 700px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}

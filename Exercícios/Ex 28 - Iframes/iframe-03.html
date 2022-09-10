@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no Iframe</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum laudantium, hic, doloremque porro eius officiis dignissimos voluptatibus cum odio quos, possimus delectus. Vel porro veniam nihil aut doloribus, magni soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel nostrum omnis, tempora cupiditate eveniet doloribus cumque quas, consequuntur similique architecto asperiores nulla repudiandae atque consequatur! Doloribus sequi esse repudiandae!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina-01.html" target="frame">Primeira página</a></li> <!-- VAI CARREGAR A PÁGINA NO IFRAME -->
+        <li><a href="paginas-extras/pagina-02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina-03.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas expedita ab voluptatum exercitationem pariatur tempore consequatur qui labore, nemo sed dolores officiis. Optio sapiente omnis unde, in saepe reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure quam repudiandae quaerat laborum pariatur harum, dolorum sit reprehenderit molestias, expedita dicta eius voluptate perferendis? Laboriosam nihil repudiandae consequatur facilis.</p>
+
+    <iframe src="" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque sed nulla natus nemo vero atque nobis? Consectetur vel odit, nisi, quae rerum architecto id commodi corporis saepe eos, voluptatibus facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam ea fugiat adipisci, itaque repellendus fuga iusto enim tenetur recusandae quidem! Expedita quas ad quaerat blanditiis pariatur illo labore itaque.</p><img src='imagens/logo-instagram.jpg'>"> <!--NAME -> NOMEIA O IFRAME; SRCDOC -> CRIAR UM DOCUMENTO HTML -->
+        <p>Infelismente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque sed nulla natus nemo vero atque nobis? Consectetur vel odit, nisi, quae rerum architecto id commodi corporis saepe eos, voluptatibus facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam ea fugiat adipisci, itaque repellendus fuga iusto enim tenetur recusandae quidem! Expedita quas ad quaerat blanditiis pariatur illo labore itaque.</p>
+</body>
+</html>

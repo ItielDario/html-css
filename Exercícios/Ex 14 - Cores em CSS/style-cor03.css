@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{ /*CONFIGURAÇÕES GLOBAIS*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{ /*SITE*/
+    background-image: linear-gradient(to left, #bd0f4f, #590222);
+}
+main{ /*CONTEÚDO*/
+    background-color: white;
+    border-radius: 10px; /*BORDA DO BACKGROUND*/
+    box-shadow: 5px 5px 15px rgba(63, 2, 24, 0.699); /*SOMBRA DO BACKGROUND (PARA O LADO, PARA BAIXO, ESPALHAMENTO, COR)*/
+    width: 600px; /*LARGURA*/
+    padding: 20px; /*DISTANCIAMENTO DO CONTEÚDO ATÉ A BORDA*/
+    margin: auto; /*ALINHAMENTO DO MEU CONTEÚDO*/
+}
+
+h1{
+    text-align: center;
+    color: #D99C52;
+    text-shadow: 1px 1px 2px #b68141a4;
+
+}
+
+h2{
+    color: #9B72F2;
+
+}
+
+p{
+    text-align: justify;
+}

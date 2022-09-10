@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon-html.ico" type="image/x-icon">
+        <title>Outras Formatações</title>
+    </head>
+    <body>
+        <h1>Principais formatações</h1>
+        <h2>Negrito / Destaque</h2>
+        <p>Nesta frase temos um <b> termo em negrito</b> usando a tag &lt;b&gt; (não semântica)</p> <!-- SO TEM FORMA -->
+        <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica)</p> <!-- DA DESTAQUE A UMA FRASE (TEM FORMA E TEM SEMÂNTICA PARA O HTML(SENTIDO)) -->
+
+        <h2>Itálico / Ênfase</h2>
+        <p>Nesta frase temos um <i>termo em italico</i> usando a tag &lt;i&gt; (não semântica)</p> <!-- SO TEM FORMA -->
+        <p>Nesta frase temos um <em>termo em ênfase</em> usando tag &lt;em&gt; (semântica)</p> <!--DA ÊNFASE A UMA FRASE (TEM FORMA E TEM SEMÂNTICA PARA O HTML(SENTIDO))-->
+
+        <h2>Texto marcado</h2>
+        <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p> <!--MARCA UMA FRASE E DA ÊNFASE-->
+
+        <h2>Texto grande e Pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big> <!-- BIG ESTÁ OBSOLETO -->e um <small>texto pequeno</small> neste parágrafo</p> <!-- DEIXA UMA FRASE PEQUENA -->
+
+        <h2>Texto deletado</h2>
+        <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mmas não considerado</p> <!-- PASSSA UMA LINHA NO MEIO DA FRASE (ANULANDO ELA) -->
+
+        <h2>Texto inserido</h2>
+        <p>Podemos marca <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi inserido depois</p> <!-- SUBLINHA UMA FRASE -->
+
+        <h2>Texto sobrescrito</h2>
+        <p>Para inserir coisas como x<sup>2</sup>+3</p> <!-- SOBRESCREVE UM CARACTER (COLOCA ELE EM CIMA) -->
+
+        <h2>Texto subescrito</h2>
+        <p>Para inserir coisas como H<sub>2</sub>O</p> <!-- SUBESCREVE UM CARACTER (COLOCA ELE EM BAIXO) -->
+
+        <h1>Outras formatações</h1>
+        <h2>Código-fonte / Pré-Formatações</h2>
+        <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p> <!-- FONTE MONO ESPAÇADA (ÓTIMA PARA LER CÓDIGO) -->
+        <pre> <!-- SE ADEQUA A FORMATAÇÃO DO TEXTO -->
+            <code>
+        inteiro num;
+        escreva("Digite um numero: ");
+        leia(num)
+        se (num % 2 == 0){
+            escreva("O numero é par")
+        }
+        senao{
+            escreva("O numero é impar")
+        }
+        escreva("Fim do programa")
+            </code>
+        </pre>
+        <h2>Citações siples</h2>
+        <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p> <!-- CITAÇÕES (ÁSPAS -> "") -->
+        
+        <h2>Citações completas</h2>
+        <p>Como dizia Platão</p>
+        <blockquote cite="https://www.pensador.com/autor/platao/3/">Vencer a si próprio é a maior das vitórias.</blockquote> <!-- CITAÇÕES PARA UM DETERMINADO AUTOR (DESLOCADA PARA DENTRO) | CITE -> PARÂMETRO QUE DIZ ONDE ENCONTRAMOS A FRASE OU QUEM É O DONO DA FRASE-->
+
+        <h2>Abreviações</h2>
+        Estou estudando <abbr title="HyperText Markup Linguage">HTML</abbr> E <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando! <!-- MOSTRA O SIGNIFICADO DA SIGLA-->
+
+        <h2>Textos Invertidos</h2>
+        <p><bdo dir="rtl"> Estou aprendendo a criar coisas em HTML.</bdo></p> <!-- iNVERTE O TEXTO (LÊ O TEXTO DE TRAZ PARA FRENTE) -->
+    </body>
+</html>

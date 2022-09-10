@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+    id = #
+    class = .
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(184, 248, 184);
+}
+
+h1{
+    color: rgb(0, 167, 0);
+}
+
+h2{
+    color: rgb(64, 100, 64);
+}
+
+h1#principal{ /*SELETOR PERSONALIZADO*/
+    text-align: center;
+    background-color:  rgb(0, 167, 0 );
+    color: white
+}
+
+.basico{ /*SELETOR PERSONALIZADO*/
+    color: rgb(72, 148, 72);
+}
+
+.intermediario{
+    color: rgb(148, 147, 72);
+}
+
+.avancado{
+    color: rgb(148, 72, 72);
+}
+
+.destaque{
+    background-color: rgba(255, 241, 161, 0.726);
+}

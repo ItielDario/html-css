@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@600 & display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+    background-attachment: fixed;
+}
+
+#form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 60px;
+    align-items: center;
+    color: #2b344b;
+}
+
+#title{
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 1px solid #6f7e8a;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input i{
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(-45deg, #ffce51, #ff7253, #fd5754); /*DEIXANDO O FUNDO GRADIENTE*/
+    -webkit-background-clip: text;/*DEIXA COMO COR DE FUNDO DO ICONE O GRADIENTE*/
+    -webkit-text-fill-color: transparent; /*TIRA A COR PADRÃO DO ICONE E SÓ DEIXA A COR DE FUNDO*/
+}
+
+.input > input{
+    width: 80%;
+    border: none;
+    outline: none; /*TIRA A LINHA EM VOLTA DA CAIXA QUANDO CLICA PARA PREENCHER O FORMULÁRIO*/
+    transform: translateY(-10%);/*CENTRALIZA VERTICALMENTE*/
+    color: #2b344b;
+    font-size: 15px;
+}
+
+.botao input{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao input:hover{
+    background-image: linear-gradient(-45deg, #eec04c, #ec7054, #ee5a57);
+}

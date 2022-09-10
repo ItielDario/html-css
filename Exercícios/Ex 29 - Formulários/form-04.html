@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário com Telefone e E-mail</h1>
+
+    <form action="php/cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!-- AGRUPA ELEMENTOS OU CAMPOS SEMELHANTES -->
+            <legend>Dados pessoais</legend> <!-- TÍTULO DO AGRUPAMENTO -->
+
+            <p>
+                <label for="inome">Nome </label>
+                <input type="text" name="nome" id="inome" required minlength="5" placeholder="Nome completo" >
+            </p>
+            <p>
+                <label for="iemail">Email </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+                <!--
+                    - INPUT TYPE='EMAIL' -> CRIA CONTROLES INTERTIVOS QUE RECEBEM EMAILS
+                    - OBS: NÃO VERIFICA SE O EMAIL EXISTE
+                -->
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                <!--
+                    - INPUT TYPE='EMAIL' -> CRIA CONTROLES INTERTIVOS QUE RECEBEM TELEFONES
+                    -
+                    - PATTERN -> DEFINE PADRÕES COM EXPRESSÕES REGULARES:
+                        - '^' -> INICIO;
+                        - '\( \)' -> ABRE E FECHA PARENTES;
+                        - '\d' -> RECEBE DIGITOS;
+                        - '{n}' -> INDICA QUANTOS DIGITOS VAI RECEBER;
+                        - '-' -> INDICA QUE TEM QUE TER UM '-';
+                        - '$' -> FIM;
+                -->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

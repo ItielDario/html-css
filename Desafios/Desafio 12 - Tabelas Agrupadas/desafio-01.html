@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="numero-12.png" type="image/x-icon">
+    <title>Desafio 12.1</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            height: 94.2vh;
+            position: relative;
+        }
+
+        table{
+            width: 300px;
+        }
+
+        tbody > tr > td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;        
+        }
+
+        main > aside{
+            position: absolute;
+            top: 90%;
+        }
+
+        aside{
+            width: 201.2vh;
+            background-color: rgb(156, 151, 58);
+            padding: 22px;
+            text-align: center;
+        }
+        aside > p > a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a::after{
+            content: '\00A0\1F517';
+        }
+
+        footer{
+            background-color: #1d1d1d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <aside>
+            <p id="link"><a href="https://www.flaticon.com/br/icones-gratis/11" title="11 ícones" target="_blank" type="external">11 ícones criados por Md Tanvirul Haque - Flaticon</a></p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Criado por <strong>Itiel Cardoso Dario</strong></p>
+    </footer>
+    
+</body>
+</html>

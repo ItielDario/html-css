@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(86, 138, 8);
+    padding: 80px;
+    text-align: center;
+    color: white;
+}
+
+.nav_barra{
+    display: flex;
+    justify-content: center; /*DEIXA OS ITENS CENTRALIZADOS HORIZONTALMENTE*/
+    background-color: black;
+}
+
+.nav_barra a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav_barra a:hover{
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+}
+
+main{
+    background-color: rgb(39, 146, 110);
+    display: flex;
+    flex-flow: row wrap; /*DIVS EM LINHAS (UMA AO LADO DA OUTRA) E OS ITENS FLEXIVEIS SERÃO ENCAPSULADOS (RESPONSIVOS)**/
+}
+
+.card{
+    flex: 48%; /*TAMANHO EM RELAÇÃO A DIV PAI (MAIN)*/
+    background-color: lightgray;
+    height: 400px;
+    margin: 1%;
+}
+
+
+
+/*CONFUGURAÇÕES PARA TELAS E COM LARGURA MÁXIMA DE 700PX*/
+@media screen and (max-width: 600px){
+    .nav_barra{
+        flex-direction: column; /*DIVS EM COLUNAS (UMA EM BAIXO DA OUTRA)*/
+    }
+
+    .card{
+        flex: 100%;
+    }
+}
+

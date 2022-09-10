@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login 2.0</title>
+    <script src="https://kit.fontawesome.com/2820447d1c.js" crossorigin="anonymous"></script> <!-- IMPORTANDO ICONES DO https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <form action="" method="post" autocomplete="on">
+            <h1 id="title">Cadastrar</h1>
+
+            <label for="iusername">Nome</label>
+            <div class="input">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i> <!-- IMPORTANDO ICONE DE USUÁRIO -->
+                <input type="text" name="username" id="iusername" required placeholder="Username" />
+            </div>
+
+            <label for="iemail">E-mail</label>
+            <div class="input">
+                <i class="far fa-envelope"></i> <!-- IMPORTANDO ICONE DE EMVELOPE -->
+                <input type="text" name="email" id="iemail" required placeholder="E-mail"/>
+            </div>
+
+            <label for="isenha">Senha</label>
+            <div class="input">
+                <i class="fas fa-lock"></i> <!-- IMPORTANDO ICONE DE CADEADO -->
+                <input type="password" name="senha" id="isenha" required placeholder="Senha"/>
+            </div>
+            
+            <div class="botao">
+                <input type="submit" value="Cadastrar"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

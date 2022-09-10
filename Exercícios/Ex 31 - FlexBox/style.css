@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+*{
+    box-sizing: border-box;
+}
+
+.flex-pai{
+    background-color: blue;
+    height: 400px;
+    display: flex; /*ORGANIZA OS ELEMENTOS DE UMA PÁGINA HTML DENTRO DE SEUS CONTAINERS DE FORMA DINÂMICA E SEMPRE REORGANIZANDO-SE DE ACORDO COM A NECESSIDADE (RESPOSIVIDADE)*/
+    flex-direction: row; /*DIVS EM LINHAS (UMA AO LADO DA OUTRA)*/
+
+    flex-wrap: wrap; /*ESPECIFICA QUE OS ITENS FLEXIVEIS SERÃO ENCAPSULADOS (RESPONSIVOS)*/
+    flex-flow: row wrap; /*SHORTHANDS*/
+
+    justify-content: center; /* DETERMINA ALINHAMENTO HORIZONTAL DE UM CONTEUDO */
+
+    align-items: center; /* DETERMINA ALINHAMENTO VERTICAL DE UM CONTEUDO */
+
+    align-content: center; /*ALINHA TODOS OS CONTEUDOS EM RELAÇÃO A DIV PAI*/   
+}
+
+
+/*CONFIGURAÇÕES PARA TELAS E COM LARGURA MÁXIMA DE 600PX (CELULAR)*/
+@media screen and (max-width: 400px){ 
+    .flex-pai{
+        flex-direction: column; /*DIVS EM COLUNAS (UMA EM BAIXO DA OUTRA)*/
+    }
+}
+
+
+.flex-pai div{
+    flex-grow: 1; /*CRESCIMENTO DOS ITENS EM RELAÇÃO A TELA DE FORMA AUTOMATICA*/
+
+    background-color: goldenrod;
+    border: 1px solid black;
+    
+    padding: 30px 0;
+    text-align: center;
+}

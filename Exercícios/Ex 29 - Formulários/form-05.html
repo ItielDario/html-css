@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles</title>
+</head>
+<body>
+    <h1>Testando controles: Checkbox e Radio buttom</h1>
+
+    <form action="php/cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <p>
+                <input type="radio" name="sexo" id="isexmas" value="M" checked> 
+                <!-- 
+                    - RADIO -> CRIA CONTROLES INTERATIVOS QUE RECEBEM MARCAS DE VERIFICAÇÃO (DA PARA MARCAR 1 OU MAIS CAIXAS) 
+                    - PARA QUE APENAS UMA CAIXA SEJA SELECIONADA DEVE-SE COLOCAR O MESMO NOME EM TODOS OS CAMPOS 
+                    - CHECKED -> MARCA O CAMPO
+                -->
+                <label for="isexmas">Masculino</label> <!-- COM O LABEL DA PARA MARCAR A CHECKBOX CLICANDO NA PALAVRA -->
+                <br>
+                
+                <input type="radio" name="sexo" id="isexfem" value="F">
+                <label for="isexfem"> Feminino</label>
+                <br>
+
+                <input type="radio" name="sexo" id="isexout" value="O">
+                <label for="isexout"> Outro</label>
+                <br>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <p>
+                <input type="checkbox" name="esbas" id="iesbas"> Basquete <!-- CHECKBOX -> CRIA CONTROLES INTERATIVOS QUE RECEBEM MARCAS DE VERIFICAÇÃO (DA PARA MARCAS 1 OU MAIS CAIXAS) -->
+                <br> <!-- SEM O LABEL APENAS DA PARA MARCAR A CHECKBOX CLICANDO NA CAIXA -->
+
+                <input type="checkbox" name="esfut" id="iesfut"> Futebol
+                <br>
+
+                <input type="checkbox" name="esnat" id="iesnat"> Natação 
+                <br> 
+
+                <input type="checkbox" name="esten" id="iesten"> Tênis
+                <br>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

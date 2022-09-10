@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+}
+
+header > h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.material-symbols-outlined { /*DEFINIÇÕES DO GOOGLE*/
+    font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+i#burguer{ /*MINHAS DEFINIÇÕES*/
+    display: block;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+i#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer; /*ESPECIFICA QUE O CURSOR NO MOUSE VAI SER 'UMA MÃO' QUANDO O PONTEIRO ESTIVER SOBRE O ELEMENTO*/
+}
+
+#itens{
+    display: none; /*ESCONDE O MENU*/ 
+}
+
+#itens > ul{
+    list-style-type: none;
+}
+
+#itens > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    text-align: center;
+    border-top: 2px solid rgb(119, 119, 119);
+}
+
+#itens > ul > li > a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box; /*A LARGURA É 90VW, POR TANTO, O PADDING VAI FAZER PARTE DOS 90VW*/
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article{
+    padding-bottom: 20px;
+}
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}

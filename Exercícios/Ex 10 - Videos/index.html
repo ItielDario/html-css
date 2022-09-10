@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Videos com HTML5</title>
+    </head>
+
+    <body>
+        <h1>Inserindo videos hospedados localmente</h1>
+        <p>Este video está hospedado no meu proprio servidor.</p>
+
+        <video width="300" poster="imagens/capa-meu-video.png" controls autoplay loop> <!-- VIDEO HOSPEDADO NO PRÓPRIO SERVIDOR (NÃO RECOMENDADO (MUITO PESADO)) -->
+            <source src="midia/meu-video.ogv" type="video/agv"><!-- SE FOR COMPATIVEL COM O NAVEGADOR FAZ O DOWNLOAD DO VIDEO, SE NAO FOR TENTA O DE BAIXO -->
+            <source src="midia/meu-video.mp4" type="video/mp4"><!-- SE FOR COMPATIVEL COM O NAVEGADOR FAZ O DOWNLOAD DO VIDEO, SE NAO FOR MOSTRA A MENSAGEM BAIXO -->
+            <p>Seu navegador não é compativel com reprodução de video</p>
+        </video>
+        <p>Vídeo de: <a href="https://www.pexels.com/pt-br/video/alcool-bebida-alcoolica-cerveja-bebida-12173626/" target="_blank" rel="external">宇航 钱</a></p>
+
+        <h1>Inserindo videos de forma externa (YouTube)</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F1DHKjAjYhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>

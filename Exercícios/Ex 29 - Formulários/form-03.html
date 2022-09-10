@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+</head>
+<body>
+    <h1>Elementos number, month, date e time</h1>
+    <form action="php/cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required value="5"> 
+            <!-- 
+                - INPUT TYPE='NUMBER' -> CRIA CONTROLES INTARATIVOS QUE RECEBEM APENAS NÚMEROS
+                - MIN / MAX -> VALOR MÍNIMO / VALOR MÁXIMO QUE O USUARIO PODE DIGITAR 
+                - STEP -> INTERVALO ENTRE NUMEROS (STEP='0.1' -> 0 - 0,1 - 0,2 - 0,3 - 0,4 - 0,5 - 0,6...)
+                - VALUE -> VALOR QUE IRÁ APARECER NO CONTROLE INTERATIVO
+            
+            -->
+        </p>
+
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes" required value="2022-08"> <!-- INPUT TYPE='MES' -> CRIA CONTROLES INTARATIVOS QUE RECEBEM MÊS E ANO -->
+        </p>
+
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" required value="2022-08-28"> <!-- INPUT TYPE='DIA' -> CRIA CONTROLES INTARATIVOS QUE RECEBEM DIA, MÊS E ANO -->
+        </p>
+
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora" value="00:00"> <!-- INPUT TYPE='TIME' -> CRIA CONTROLES INTARATIVOS QUE RECEBEM HORA E MINUTOS -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

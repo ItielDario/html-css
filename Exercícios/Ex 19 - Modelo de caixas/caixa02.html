@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Agrupamentos</title>
+
+    <style>
+        body{ /*SITE EM GERAL*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{ /*CABEÇARIO*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            width: 460px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        header > h1{
+            margin: 0px 0px 19px 0px;
+        }
+
+        nav{/*NAVEGAÇÕES / LINKS*/
+            background-color: #1D1D1D;
+            padding: 5px;
+            box-shadow: 3px 3px 4px 1px #000000a9; /*SOMBRA*/
+        }
+
+        nav > a{ /*TODOS OS A QUE ESTÃO DENTRO DE NAV*/
+            color: white;
+            text-decoration: none;
+            padding: 0px 28px;
+            
+        }
+
+        a:hover{ /*QUANDO PASSAR O MOUSE POR CIMA DO LINK*/
+            color: rgb(190, 190, 190);
+            font-weight: bold;
+            text-decoration: underline;
+        }    
+        
+        a:active{ /*QUANDO CLICAR NO LINK*/
+            color: black;
+        }
+
+        main{ /*CORPO*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px 10px 0px 10px;
+            width: 460px;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.685);
+            
+        }
+
+        #assuntos{
+            background-color: lightgray;
+        }
+
+        #assuntos > a{
+            color: black;
+            text-decoration: none;
+            margin: 0px 38px;
+        }
+
+        #assuntos > a:active{
+            color: lightgray;
+        }
+
+        #noticias{
+            margin: 10px 0px;
+        }
+
+        article{ /*ARTIGO*/
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{ /*TODOS ASIDE QUE ETIVEREM DENTRO DOS ARTICLES*/
+            background-color: rgb(156, 154, 154);
+        }
+
+        footer{ /*RODAPÉ*/
+            background-color: #1D1D1D;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            width: 474px;
+            margin: 0px 0px 0px 10px;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.685);
+        }
+
+        p#rodape{ /*TEXTO DO RODAPÉ*/
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 12px 0px 0px 0px;
+            border-radius: 50%;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- TAGS SEMÂNTICAS -->
+
+    <header> <!-- CABEÇARIO -->
+        <h1>Meu site</h1>
+
+        <nav> <!-- LINKS -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+
+
+    <main> <!-- CONTEUDO PRINCIPAL -->
+        <section>
+            <article id="assuntos">
+                <a href="#">Esportes</a>
+                <a href="#">Politica</a>
+                <a href="#">Tecnologia</a>
+
+            </article>
+        </section>
+        
+        <section id="noticias">
+            <article><!-- ARTIGO -->
+                <h2>Notícia sobre o Brasil</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quisquam possimus blanditiis fugit voluptate corrupti, facere, laborum, amet animi ipsa maxime praesentium illum quod nulla architecto laboriosam rerum? Earum, sunt!</p>
+
+                <aside><!-- UMA PARTE DO DOCUMENTO QUE ESTÁ RELACIONADO COM O CONTEÚDO PRINCIPAL -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+
+
+    <footer> <!-- RODAPÉ -->
+        <p id="rodape">Desenvolvido por Itiel Cardoso Dario</p>
+    </footer>
+
+
+    <div id="bola"></div>
+</body>
+</html>

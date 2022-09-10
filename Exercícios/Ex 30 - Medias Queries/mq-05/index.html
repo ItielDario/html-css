@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- IMPORTANDO ICONES DO https://fonts.google.com/icons -->
+
+    <link rel="stylesheet" href="estilos/style.css"/> <!-- MOBILE FIRST -->
+    <link rel="stylesheet" href="estilos/media-queries.css"/> <!-- OUTRAS TELAS -->
+</head>
+<body onresize="mudouTamanho()"> <!-- QUANDO MUDAR O TAMNHO DO SITE VAI CHAMAR A FUNÇÃO "MUDOUTAMANHO()" -->
+    <header>
+        <h1>Menu Responsivo</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i> 
+        <!-- IMPORTANDO O 'MENU'
+
+            - <I></I> -> TAG PARA ICONE;
+            - ONCLICK="CLICKMENU()" -> QUANDO CLICAR NO MENU VAI CHAMAR A FUNÇÃO 'CLICKMENU()'
+        -->
+        <nav id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aut sapiente ratione minima odio libero eos quidem earum neque, corporis quam ullam vero consequuntur animi quae pariatur voluptates? Esse, ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab velit suscipit sit exercitationem facere vero fugiat debitis sequi consectetur aliquid maxime, voluptatem laudantium accusantium. Mollitia fugiat totam saepe explicabo?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates itaque qui alias, totam dolorum, sint quaerat unde assumenda necessitatibus culpa maxime soluta! Nemo, modi recusandae pariatur quam a cum hic! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias consequuntur, quibusdam optio vel vitae veniam! Ipsam recusandae laborum veniam qui sequi magni, placeat in voluptatem, sed, dignissimos natus itaque! Quam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint adipisci voluptates, placeat cumque ratione nobis in doloribus repudiandae, totam deleniti nisi dolorem eum aperiam laudantium ab inventore autem illum aliquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit consequatur numquam vero, suscipit sapiente debitis dolore tempore. Laudantium deleniti doloribus dolorum, vero, veniam asperiores, quae maxime libero eum eos nobis!</p>
+        </article>
+    </main>
+
+    <script> /*SCRIPT LOCAL / INCORPORADO (JAVASCRIPT)*/
+        /*OUTRAS TELAS*/
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){ /*SE A LARGURA DA TELA FOR MAIOR OU IGUAL A 768*/
+                itens.style.display = 'block' /*MOSTRA O 'ITENS'*/
+            }
+            else{ /*SE A TELA #NÃO# FOR MAOIR OU IGUAL QUE 768*/
+                itens.style.display = 'none' /*ECONEDE O 'ITENS'*/ 
+            }
+        }
+
+        /*MOBILE / TABLET*/
+        function clickMenu(){
+            if (itens.style.display == 'none'){ /*SE QUANDO CLICAR O 'ITENS' ESTIVER DISPLAY 'NONE' */
+                itens.style.display = 'block' /*MOSTRA O 'ITENS'*/
+            }
+            else{ /*SE QUANDO CLICAR O 'ITENS' #NÃO# ESTIVER DISPLAY 'NONE'*/
+                itens.style.display = 'none' /*ECONEDE O 'ITENS'*/ 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+
+    <style>
+        .container{
+            border: 2px solid red;
+            overflow: auto;
+        }
+
+        .box{
+            width: 250px;
+            height: 350px;
+            background-color: lightgray;
+
+            float: left; /*FLUTUAÇÃO -> DETERMINA ONDE O ELEMENTO DEVE ESTAR*/
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            clear: both; /*LIMPA / NÃO CONSIDERA A FLUTUAÇÃO*/
+        }
+
+        ul{
+            background-color: black;
+            padding: 20px;
+        }
+
+        li{
+            display: inline-block;
+           
+            
+        }
+
+        li > a{
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+           
+        }
+
+        li > a:hover{
+            background-color: lightgray;
+            color: black;
+        }
+
+        li#login{
+            float: right;
+        }
+
+        li#login > a:hover{
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de float</h1>
+
+    <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li id="login"><a href="#">Login</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="box"></div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quis. Fugiat maxime pariatur, doloremque laboriosam porro quidem deserunt ducimus facere. Sint, ea pariatur ad impedit placeat ipsam eaque quos consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis, distinctio eligendi ab, </p>
+
+        <h2>Outro paragrafo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas similique reiciendis doloremque nesciunt inventore voluptatibus! Reiciendis accusantium laudantium vitae minima impedit provident esse quam fugit. Deserunt omnis tenetur quos nam?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, enim minus. Pariatur excepturi similique nobis debitis ut, veniam rerum dignissimos? Dolorum qui ipsam impedit nisi quod modi mollitia voluptatibus esse.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline-Block</title>
+
+    <style>
+        .border{
+            border: 2px solid red;
+            margin-bottom: 50px;
+        }
+
+        li{
+            display: inline-block; /*BLOCOS EM LINHA*/
+            width: 150px;
+            height: 150px;
+            
+        }
+
+        li.amarelo{
+            background-color: yellow;
+        }
+
+        li.verde{
+            background-color: green;
+        }
+
+        li.azul{
+            background-color: blue;
+        }
+
+        div{
+            display: inline-block; /*BLOCOS EM LINHA*/
+            height: 150px;
+            width: 150px;
+        }
+
+        div.laranja{
+            background-color: orange;
+        }
+
+        div.roxo{
+            background-color: purple;
+        }
+            
+        div.vermelho{
+            background-color: red;
+            visibility: hidden; /*OCULTA UM ELEMNETO*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="border">Exemplos de Display Inline-Block</h1>
+    <h2>Listaordenada</h2>
+
+    <ul class="border">
+        <li class="amarelo">Primeiro Item</li><li class="verde">Segundo Item</li><li class="azul">Terceiro Item</li> <!-- QUANDO O DISPLAY É INLINE ENTENDE-SE QUE CADA 'LI' É UMA FRASE. COLOCANDO UM DO LADO DO OUTRO TIRA O ESPAÇAMENTO ENTRE AS 'PALAVRAS' -->  
+    </ul>
+
+    <h2>Div</h2>
+    <div class="laranja">
+        <p>conteudo</p>
+    </div>
+    <div class="vermelho">
+        <p>conteudo</p>
+    </div>
+    <div class="roxo">
+        <p>conteudo</p>
+    </div>
+</body>
+</html>

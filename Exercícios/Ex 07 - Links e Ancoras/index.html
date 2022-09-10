@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links</h1>
+    <h2>Externos</h2>
+    <p>Você pode acessar o <a href="https://www.youtube.com/">Youtube</a></p> <!-- A -> ÂNCORA; HREF -> HIPETTEXT REFERENCE (URL). DESTINO DO LINK-->
+    <p>Você tambem pode acessar o <a href="https://www.youtube.com/cursoemvideo" target="_blank" rel="external">calnal no YouTube do Gustavo Guanabara</a></p><!-- TARGET="_BLANK" (ALVO EM BRANCO) -> ABRE O LINK EM OUTRA ABA. REL -> LINK DO TIPO (EXTERNAL = VAI PARA FORA DO MEU SITE)-->
+    <h2>Internos</h2>
+    <p>Esta é a primeira página do site, se você quiser, tambem pode acessar a <a href="pagina02.html" rel="next">minha segunda página</a></p> <!--  REL="NEXT" -> PROXIMA PÁGINA (INDICA PARA O SERVIDOR QUE A PAGINA02.HTML É MINHA PAGINA POSTERIOR / PÁGINA SECUNDÁRIA) -->
+    <p>Você támbem pode acessar nossa <a href="noticias/pagina03.html" target="_self" rel="next" >página de notícias</a></p> <!-- TARGET="_SELF" (ALVO EM BRANCO) -> INDICA QUE O LINK É DO PRÓPRIO SITE -->
+    <h2>Links para Download</h2>
+    <ul>
+        <li><a href="icones/conjunto-icones.zip" download="conjunto-icones.zip" type="application/zip">Download de icones compactado em ZIP</a> <!-- FAZ  DOWNLOAD DE ARQUIVOS COMPACTADOS .ZIP -->
+    </ul>
+</body>
+</html>

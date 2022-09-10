@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Reprodizir audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5. </p>
+    <audio preload="metadata" autoplay controls loop><!--PARÂMETROS: (PRELOAD="AUTO -> SÓ CARREGA O SITE DEPOIS DE CARREGAR O AUDIO; METADATA -> SÓ CARREGA INFORMAÇÕES DO ARQUVO E DEPOIS DE APERTAR O PLAY ELE FAZ O DOWNLOAD DO AUDIO; NONE -> NÃO FAZ NADA";) - (AUTOPLAY -> TOCA O AUDIO INSTANTANEAMENTE DEPOIS DE BAIXADO) - (CONTROLS -> MOSTRA OS CONTROLES PADRÃO PARA O AUDIO NA PÁGINA) - (LOOP -> FAZ COM QUE O ÁUDIO REPITA AUTOMÁTICAMENTE) -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"><!-- SE ACAHR ESSE ARQUIVO ELE REPRODUZ, SE NÃO CONSEGUIR  ELE PULA PARA O PROXIMO -->
+        <source src="midia/guanacast-33.ogg" type="audio/gg"><!-- SE ACAHR ESSE ARQUIVO ELE REPRODUZ, SE NÃO ACHAR ELE PULA PARA O PROXIMO -->
+        <source src="midia/guaracast-33.wav" type="audio/wav"> <!-- SE ACAHR ESSE ARQUIVO ELE REPRODUZ, SE NÃO ACHAR ELE PULA PARA O TEXTO -->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

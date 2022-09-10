@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Testando elemento Output</h1>
+
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Exemplo soma</legend>
+
+            <p>
+                <label for="inum1">Número 01:</label>
+                <input type="number" name="num1" id="inum1" required min="0" max="50" placeholder="0 a 50" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"> <!-- ONINPUT -> JAVASCRIPT -->
+            </p>
+            <p>
+                <label for="inum2">Número 02:</label>
+                <input type="number" name="num2" id="inum2" required min="0" max="50" placeholder="0 a 50" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"> <!-- ONINPUT -> JAVASCRIPT -->
+            </p>
+            <p>
+                <label for="isoma">Soma: </label>
+                <output name="soma" id="isoma"></output> <!-- ELEMENTO DE SAÍDA ONDE INJETARÁ O RESULTADO DE UMA AÇÃO DO USUÁRIO -->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Exemplo barra</legend>
+
+            <p>
+                <label for="inum">Número: </label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Exemplo idade</legend>
+
+            <p>
+                <label for="iano">Em que ano você nasceu? </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="calIdade()">
+            </p>
+
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <output id="iidade">0</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+    <script> /*CALCULA A IDADE DO USUÁRIO -> JAVASCRIPT*/
+        function calIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

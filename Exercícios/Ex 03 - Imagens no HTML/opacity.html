@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Opacity</title>
+
+    <style>
+        .img1{
+            opacity: 1; /*OPACIDADE / TRANSPARENCIA -> 1(IMAGEM NORMAL) ATÉ 0.0 (IMAGEM TRANSPARENTE)*/
+        }
+
+        .img2{
+            opacity: 0.6; /*60% DE TRANSPARÊNCIA*/
+        }
+
+        .img3{
+            opacity: 0.1; /*10% DE TRANSPARÊNCIA*/
+        }
+
+        a.botao{ 
+            display: inline-block;
+            background-color: red;
+            font-size: 1.5em;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        a.botao:hover{
+            opacity: 0.7;
+        }
+
+        .transparente{ 
+            background-color: blue;
+            font-size: 1.3em;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 10px;
+            opacity: 0.5;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Testando Opacidade nas imagens</h1>
+
+    <img class="img1" src="https://picsum.photos/180" alt="Imagem Aleatória picsum.photos"> <!-- SITE DE FOTOS ALEATÓRIAS -->
+
+    <img class="img2" src="https://picsum.photos/180" alt="Imagem Aleatória picsum.photos">
+
+    <img class="img3" src="https://picsum.photos/180" alt="Imagem Aleatória picsum.photos">
+
+    <a href="#" class="botao">Passe o mouse aqui</a>
+
+    <div class="transparente">
+        <p>O texto que está dentro do box que está com opacidade tambem é afetado</p>
+    </div>
+</body>
+</html>
