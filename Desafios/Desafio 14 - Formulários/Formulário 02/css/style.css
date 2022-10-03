@@ -171,3 +171,55 @@ body{
     font-weight: 500;
     color: #fff;
 }
+
+@media screen and (max-width: 1330px){
+    .form_image{
+        display: none;
+    }
+
+    .container{
+        width: 50%;
+        height: auto;
+    }
+    
+    .form {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1120px){
+    .container{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1064px){
+    .container{
+        margin-top: 0px;
+        width: 90%;
+        height: auto;
+    }
+
+    .input_group{
+        flex-direction: column;
+        overflow-y: scroll; /*COLOCANDO BARRA DE ROLAGEM*/
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender_input{
+        margin-top: 2rem;
+    }
+
+    .gender_group{
+        flex-direction: column;
+    }
+
+    .gender_input{
+        margin-top: 0.5rem;
+    }
+}
