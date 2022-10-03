@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div form-image>
+            <img src="img/undraw_shopping_re_hdd9.svg" alt="Imagem de compra no shopping">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form_header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+
+                    <div class="login_buttom">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="inout_group">
+                    <div class="input_box">
+                        <label for="ifirstname">Primeiro Nome</label>
+                        <input type="text" name="firstname" id="ifirstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="ilastname">Segundo Nome</label>
+                        <input type="text" name="lastname" id="ilastname" placeholder="Digite seu segundo nome" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="inumber">Celular</label>
+                        <input type="tel" name="number" id="inumber" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="ipassword">Senha</label>
+                        <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="ipassword">Confirme sua senha</label>
+                        <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div class="gender_inputs">
+                    <div class="gender_title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender_group">
+                        <div class="gender_input">
+                            <label for="ifamele">Feminino</label>
+                            <input type="radio" name="gender" id="ifamele">
+                        </div>
+
+                        <div class="gender_input">
+                            <label for="imale">Masculino</label>
+                            <input type="radio" name="gender" id="imale">
+                        </div>
+
+                        <div class="gender_input">
+                            <label for="iothers">Outros</label>
+                            <input type="radio" name="gender" id="iothers">
+                        </div>
+
+                        <div class="gender_input">
+                            <label for="inone">Prefiro não dizer</label>
+                            <input type="radio" name="gender" id="inone">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue_buttom">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
