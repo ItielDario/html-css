@@ -1,0 +1,84 @@
+-------------------
+O que é herperlink? 
+Os hiperlinks nos permitem vincular nossos documentos a qualquer outro documento e navegar entre eles.
+
+
+--------------------------
+Como usar a TAG hiperlink?
+Essa TAG tem abertura e fechamento, exemplo: <a></a>
+
+
+----------------------------------
+Quais são os atributos da TAG <a>?
+	- href=“recurso": (especifica o recurso a que se pretende fazer a ligação: documentos locais, URIs, URLs, e-mail, etc).
+	Exemplo: <a href=“pagina.html”>link para um documento interno</a>
+
+
+	- target="valor": (especifica aonde o documento “linkado” será aberto).
+	Exemplo:<a href="http://www.unoeste.br” target=“_blank”>UNOESTE</a> 
+
+
+	- rel="relação": (A relação do URL vinculado como tipos de links separados por espaço).
+
+--------
+ÂNCORAS:
+Pode ser utilizado para facilitar a navegação dentro da própria página, é um ponto de referência ou endereço que será
+acessado por um link. para isso, criamos um índice que orienta o usuário sobre o conteúdo do texto, como um sumário de livro.
+
+Exemplo: Nomeie um pedaço da sua página através da tag: <a name =“nome”> Texto </a>
+Depois escreva o pedaço que você quer associar a esse nome: <a href=“#NOME”> Clique Aqui</a>
+
+Outro exemplo:
+<a href="#letra_A">A</a>  |
+<a href="#letra_B">B</a>  |- Link para clicar
+<a href="#letra_C">C</a>  |
+
+<a name="letra_A"></a>    |
+<a name="letra_B"></a>    |- Link para onde você vai
+<a name="letra_C"></a>    |
+
+
+-----------
+MAPEAMENTO:
+Permitem a associação de áreas de uma figura com links para diferentes URLs.
+	- <map name=" "></map>      |- Tag para Mapas
+	- name=" "                  |- Nome que identifica o mapa
+	- <area shape=" " href=" ">   |- Define uma região da imagem
+
+Exemplo:
+<map name=“mapa1”>
+	<area shape=“rect” alt=“Retângulo”
+		coords=“10,10,80,80”
+		href=“http://www.unoeste.br” />
+
+	<area shape=“circle” alt=“Circulo”
+		coords=“120,150,60”
+		href=“arquivo.html” />
+</map>
+
+/* Chama esse mapa em cima da figura*/
+<img src=“figura.jpg” usemap=“#mapa1” border=0 /> 
+
+
+-------------------------------
+Exemplo de estilização de link:
+a{
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	background-color: gray;
+	font-family: 'Arial';
+}
+
+
+---------------
+Pseudo-classes:
+Uma pseudo-classe é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado.
+
+Exemplo:
+a:link --------|- Define o estilo do link no estado inicial;
+a:visited -----|- Define o estilo do link visitado;
+a:hover -------|- Define o estilo do link quando passa o mouse sobre ele;
+a:active ------|- Define o estilo do link ativo (o que foi "clicado").
+
+
