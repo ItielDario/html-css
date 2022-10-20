@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição INFOESTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>34º Semana de Computação e Informática da FIPP/Unoeste (INFOESTE 2022)</h1>
+    </div>
+
+    <main>
+        <aside>
+            <h2>Inscrição</h2>
+            <p>Valor a pagar: R$ 30,00</p>
+        </aside>
+
+        <form action="#" autocomplete="off">
+            <div class="campo">
+                <label for="selOpcao">Categoria de Participante</label>
+                <select name=“selOpcao” >
+                    <option value=“1” selected=“selected”> Alunos ETEC's </option>
+                    <option value=“2”> Alunos de Graduação EAD - FIPP </option>
+                    <option value=“3”> Alunos de Graduação Presencial - FIPP  </option>
+                    <option value="4"> Demais Participantes </option>
+                    <option value="5"> Engressos da FIPP </option>
+                    <option value="6"> Professores e Funcionários da FIPP </option>
+                </select>
+            </div>
+
+            <div class="ao_lado">
+                <div class="campo">
+                    <label for="ira">RA</label>
+                    <input type="text" name="ra" id="ira" required>
+                </div>
+
+                <div class="campo">
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha" required>
+                </div>
+            </div>
+
+            <div class="ao_lado">
+                <div class="campo">
+                    <label for="icpf">CPF</label>
+                    <input type="text" name="cpf" id="icpf" placeholder="00000000000" required>
+                </div>
+                <div class="campo">
+                    <label for="irg">RG</label>
+                    <input type="text" name="irg" id="irg" placeholder="000000000" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="inome">Nome</label>
+                <input type="text" name="inome" id="inome" placeholder="Nome completo" required>
+            </div>
+
+            <div class="ao_lado">
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="iemail" id="iemail">
+                </div>
+                <div class="campo">
+                    <label for="itelefone">Telefone</label>
+                    <input type="tel"  name="telefone" id="itelefone" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(99) 99999-9999" />
+                </div>
+            </div>
+
+            <div class="ao_lado">
+                <div class="campo">
+                    <label for="idata">Data</label>
+                    <input type="date" id="idata" required/>
+                </div>
+                <div class="campo">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" required/>
+                </div>
+            </div>
+        
+            <div class="gender_inputs">
+                <div class="gender_title">
+                    <h6>Gênero</h6>
+                </div>
+
+                <div class="gender_group">
+                    <div class="gender_input">
+                        <input type="radio" name="gender" id="ifamele">
+                        <label for="ifamele">Feminino</label>
+                    </div>
+                    <div class="gender_input">
+                        <input type="radio" name="gender" id="imale">
+                        <label for="imale">Masculino</label>
+                    </div>
+                    <div class="gender_input">
+                        <input type="radio" name="gender" id="iothers">
+                        <label for="iothers">Outros</label>
+                    </div>
+                    <div class="gender_input">
+                        <input type="radio" name="gender" id="inone">
+                        <label for="inone">Prefiro não dizer</label>
+                    </div>
+                </div>
+            <div>
+
+            <div class="checkbox_inputs"></div>
+                <h6>Por que você quer participar da INFOESTE?</h6>
+            
+                <div class="checkbox_group">
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">Indicação de conhecidos</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">Acumulo de horas</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">Conhecer as empresas</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">Possivel oportunidade de trabalho</label>
+                    </div>
+                    <div class="outro">
+                        <label for="icomentario">Outro</label>
+                        <textarea name="comentario" id="icomentario" cols="50" rows="1"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttom">
+                <div class="buttom_submit">
+                    <input type="submit" value="Enviar">
+                </div>
+                <div class="buttom_reset">
+                    <input type="reset" value="Limpar">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p class="rodape">Criado por <strong>Itiel Cardoso Dario</strong></p>
+    </footer>
+</body>
+</html>
