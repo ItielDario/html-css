@@ -1,0 +1,157 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.title{
+    background-color: #0E3B44;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.title > h1{
+    color: rgba(255, 255, 255, 0.89);
+
+}
+
+main{
+    width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.075), -3px 0 4px rgba(0, 0, 0, 0.075);
+}
+
+aside > h2{
+    color: rgba(0, 0, 0, 0.719);
+}
+
+aside > p{
+    color: rgba(64, 64, 240, 0.884);
+    font-weight: bold;
+}
+
+form{
+    margin-top: 30px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo > label, h6{
+    font-weight: bold;
+    color: #000000c0;
+    font-size: 16px;
+}
+
+.ao_lado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ao_lado input{
+    width: 250px;
+}
+
+input, select, textarea{
+    border: 1px solid #00000033;
+    border-radius: 3px;
+    outline: none;
+    margin-top: 3px;
+    color: #000000b9;
+}
+
+input, .outro > textarea{
+    padding: 2px 0 2px 5px;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.322);
+}
+
+.gender_inputs{
+    margin-top: 12px;
+}
+
+.gender_group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox_inputs{
+    margin-top: 22px;
+}
+
+.checkbox_group{
+    margin-top: 5px;
+}
+
+.checkbox{
+    margin-top: 4px;
+}
+
+.outro{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.outro > label{
+    margin-right: 5px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.buttom{
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.buttom_reset > input, .buttom_submit > input{
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.13);
+    color: rgba(0, 0, 0, 0.801)
+}
+
+.buttom_reset > input{
+    margin-left: 30px;
+    background-color: rgba(255, 255, 32, 0.438);   
+}
+
+.buttom_submit > input{
+    background-color: rgba(39, 255, 32, 0.356);   
+}
+
+.buttom_reset > input:hover{
+    background-color: rgba(251, 255, 32, 0.637);   
+    cursor: pointer;
+}
+
+.buttom_submit > input:hover{
+    background-color: rgba(39, 255, 32, 0.527);   
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #1d1d1d;
+    text-align: center;
+    padding: 15px;
+}
+
+footer > .rodape{
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
