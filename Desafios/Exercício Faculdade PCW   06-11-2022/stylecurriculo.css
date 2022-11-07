@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    background-color: rgb(177, 177, 177);
+    height: auto;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.campo{
+    display: flex;    
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.campo > input, .comentario > textarea{
+    padding: 5px 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: 1px solid rgb(117, 117, 117);
+    outline: none;
+    color: rgb(46, 46, 46);
+}
+
+
+.campo > label, h6{
+    font-weight: bold;
+    color: #000000c0;
+    font-size: 16px;
+}
+
+.ao_lado{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.ao_lado input{
+    width: 250px;
+}
+
+.checkbox_group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-top: 5px;
+}
+
+.area{
+    margin: 2px 0;
+}
+
+.comentario{
+    padding-top: 5px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario > label{
+    margin-bottom: 3px;
+}
+
+.grupo_botoes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.cancelar > input{
+    font-size: 14px;
+    padding: 7px 10px;
+    background-color: rgb(255, 172, 172);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.entrar{
+    margin-left: 15px;
+    font-size: 14px;
+    padding: 7px 10px;
+    background-color: rgb(174, 212, 255);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.entrar > a{
+    text-decoration: none;
+    color: black;
+}
+
+.cancelar > input:hover{
+    background-color: rgb(245, 114, 114);
+    cursor: pointer;
+}
+
+.entrar:hover{
+    background-color: rgb(114, 171, 245);
+    cursor: pointer;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecurriculo.css">
+    <title>Currículo</title>
+</head>
+<body>
+    <main>
+        <h1>Mini-currículo</h1>
+
+        <form action="">
+            <div class="campo">
+                <label for="inome">Nome</label>
+                <input type="text" name="inome" id="inome" placeholder="Nome completo" required>
+            </div>
+
+            <div class="ao_lado">
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="iemail" id="iemail">
+                </div>
+                <div class="campo">
+                    <label for="itelefone">Telefone</label>
+                    <input type="tel"  name="telefone" id="itelefone" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(99) 99999-9999" />
+                </div>
+            </div>
+
+            <div class="checkbox_inputs"></div>
+                <h6>Linguagens de programação</h6>
+            
+                <div class="checkbox_group">
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">Pyton</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">Java</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">JavaScript</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">PHP</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="opc1" id="iopc1">
+                        <label for="iopc1">C++</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="area_inputs">
+                <div class="title">
+                    <h6>Area de atuação</h6>
+                </div>
+
+                <div class="area_group">
+                    <div class="area">
+                        <input type="radio" name="gender" id="ifamele">
+                        <label for="ifamele">Front-End</label>
+                    </div>
+                    <div class="area">
+                        <input type="radio" name="gender" id="imale">
+                        <label for="imale">Back-End</label>
+                    </div>
+                    <div class="area">
+                        <input type="radio" name="gender" id="iothers">
+                        <label for="iothers">Full-Stack</label>
+                    </div>
+                </div>
+            <div>
+
+            <div class="comentario">
+                <label for="icomentario">Experiências</label>
+                <textarea name="comentario" id="icomentario" cols="50" rows="5"></textarea>
+            </div>
+            
+            <div class="grupo_botoes">
+                <div class="cancelar">
+                    <input type="reset" value="Cancelar">
+                </div>    
+
+                <div class="entrar">
+                    <a href="confirmação.html">Entrar</a>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
